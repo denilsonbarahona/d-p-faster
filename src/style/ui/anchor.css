@@ -1,0 +1,19 @@
+.anchor {
+    font: var(--button);
+    text-decoration: none;
+    cursor: pointer; 
+}
+
+.anchor--isbase {
+    text-decoration: underline;
+    font: var(--button);
+    font-weight: 400;
+}
+
+.anchor--iswhite {
+    color: var(--white);
+}
+
+.anchor--isgray {
+    color: var(--grey2);
+}

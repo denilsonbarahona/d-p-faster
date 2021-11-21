@@ -1,0 +1,23 @@
+.logos {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    inline-size: 7.1875rem;
+    block-size: 3.5rem;
+}
+
+.logo-img {
+    inline-size: 100%;
+    block-size: 100%;
+}
+
+@media screen and (min-width:1024px) {
+    .logos {
+        flex-direction: row;
+        
+    }
+}

@@ -1,0 +1,28 @@
+.progress {
+    display: inline-block;
+    block-size: 2.5rem;
+    inline-size: 100%;
+    background-color: #E8E8E8;
+    border-start-start-radius: 100px;
+    border-end-start-radius: 100px;
+}
+
+.progress-state {
+    background-color: #2FB464;
+    border-radius: 100px;
+    block-size: inherit;
+}
+
+.progress--isSmall {
+    inline-size: 15%;
+}
+
+
+.progress--isMedium {
+    inline-size: 30%;
+}
+
+
+.progress--isBig {
+    inline-size: 50%;
+}

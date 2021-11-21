@@ -1,0 +1,74 @@
+.card {
+    padding-block-start: 6rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+    box-sizing: border-box;
+    inline-size: clamp(15rem , 100% ,26.625rem);
+    block-size: 27.4375rem; 
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    position: relative;  
+    justify-content: space-between;
+    border-radius: .5rem;
+    filter: drop-shadow(0px 4px 44px rgba(0, 0, 0, 0.1));
+}
+
+.card .circular {
+    position: absolute;
+    inset-inline-start: 50%;
+    inset-block-start: 0;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.card--isBig{
+    max-inline-size: 15rem;
+    inline-size: 100%;
+    block-size: auto;
+}
+
+.card-text ,
+.card-social  { 
+    text-align: center;
+    font: var(--body1-regular);
+    font-size: .9rem;
+}
+
+
+.card-name {
+    text-align: center;
+    font: var(--body1-bold);
+    font-size: .9rem;
+}
+
+.card-social {
+    color: var(--grey);
+}
+
+
+@media screen and (min-width:500px) { 
+    .card--isBig{
+        max-inline-size: 25rem; 
+    }
+    
+}
+
+@media screen and (min-width:768px) { 
+    .card--isBig{
+        max-inline-size: 35rem; 
+    }
+    
+}
+
+
+@media screen and (min-width:1024px) {
+    .card-text ,
+    .card-social , 
+    .card-name {
+        font-size: 1rem;
+    }
+
+    .card--isBig{
+        max-inline-size: 54.75rem; 
+    }
+}

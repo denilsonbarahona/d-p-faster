@@ -1,0 +1,43 @@
+.header{
+    background-color: var(--black);
+    margin: 0;
+    position: relative;
+    padding-inline-start: 1.25rem;
+    padding-inline-end: 1.25rem;
+    padding-block-start: 1.5rem;
+    padding-block-end: 1.5rem;
+    display: flex;
+    align-items: center; 
+}
+
+.header-title{
+    font-size: 1.5rem;
+    font-family: inter;
+    font-weight: bold;
+    color: var(--white);
+    margin: 0;     
+    inline-size: 100%; 
+    text-align: center;
+}
+
+.header .button {
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+    
+    .header {
+        padding-block-start: 0rem;
+        padding-block-end: 0rem;
+        justify-content: space-evenly;
+        grid-area: header;
+    }
+
+    .header-title{ 
+        inline-size: unset;
+    }
+
+    .header .button {
+        display: inline-block;
+    }
+}

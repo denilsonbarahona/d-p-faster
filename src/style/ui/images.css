@@ -1,0 +1,37 @@
+.circular {
+    inline-size: 6.25rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.circular-img {
+    vertical-align: middle;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}
+
+.circular--isBig{
+    inline-size: 15rem;
+}
+
+.square-container {
+    max-inline-size: 54.75rem;
+    max-block-size: 31rem;
+    border-radius: .25rem;
+    overflow: hidden;
+    box-sizing: border-box; 
+}
+
+.square-image {
+    inline-size: 100%;
+    block-size: 100%;
+    border-radius: .25rem;    
+}
+
+
+@media screen and (min-width:1024px) {
+    .circular--isBig {
+        inline-size: 23.125rem;
+    }
+}

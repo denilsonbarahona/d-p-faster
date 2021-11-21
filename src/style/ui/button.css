@@ -1,0 +1,63 @@
+.button {
+    text-decoration: none;
+    background-color: transparent;
+    display: inline-block;
+    inline-size: 100%;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    font: var(--button);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding-block-start: 0.75rem;
+    padding-block-end: 0.75rem;
+    outline-color: red;
+    outline-width: thick;
+}
+
+.button:active {
+    transform: scale(.95);
+}
+
+.button--isprimary {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.button--isbordered {
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.button--issecondary {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.button--issmall {
+    max-inline-size: 7.6875rem;
+    padding-block-start: 0.3125rem;
+    padding-block-end: 0.3125rem;
+}
+
+.button--isbig {
+    max-inline-size: 16.25rem;
+}
+
+.button--iscircular{ 
+    inline-size: 2.25rem;
+    block-size: 2.25rem;
+    background-color: var(--white);
+    border-radius: 50%; 
+    position: relative;
+    text-align: center;
+}
+
+.button-icon{
+    font-size: 1rem;
+    vertical-align: middle;
+    position: absolute;
+    inset-block-start: calc(50% - .5rem);
+    inset-inline-start: calc(50% - .5rem);
+}

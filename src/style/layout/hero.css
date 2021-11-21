@@ -1,0 +1,39 @@
+ 
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+    padding-block-end: 2.1875rem;
+    grid-area: unset;
+    padding-block-start: 2.18rem; 
+}
+
+.hero-title {
+    font: var(--headline4);
+    color: var(--white);
+    margin: 0;
+}
+
+.hero-paragraph {
+    font: var(--body2-regular);
+    color: var(--grey);
+}
+
+.hero-span {
+    margin-inline-end: unset;
+}
+
+@media screen and (min-width:1024px) {
+
+    .hero-content {
+        grid-template-areas: unset;
+        grid-area: subcontent;
+        padding-block-start: 7.75rem;
+        inline-size: 42.8125rem;
+    }
+
+    .hero-span {
+        margin-inline-end: 5.8rem;
+    }
+
+}
